@@ -1,0 +1,46 @@
+CREATE TABLE Students (
+  Id INTEGER PRIMARY KEY,
+  name varchar(20),
+  email varchar(20)
+);
+
+
+CREATE TABLE Batch(
+Id INTEGER,
+Batch_name varchar(20),
+Progress varchar(5));
+
+CREATE TABLE MENTORS(
+Mentor_id INTEGER,
+Mentor_name varchar(20),
+Topic varchar(20));
+
+CREATE TABLE TASKS(
+Id INTEGER,
+TASKS varchar(500));
+
+INSERT INTO MENTORS VALUES (1,"Prasanna","DS and ALGO");
+INSERT INTO MENTORS VALUES (2,"Akash","JS and HTML");
+INSERT INTO MENTORS VALUES (3,"Siva","React 1");
+INSERT INTO MENTORS VALUES (4,"Rajesh","Mongo and sql");
+INSERT INTO MENTORS VALUES (5,"Ventaiah","React 2");
+
+INSERT INTO Students values (1, "Akash", 'Akash@gmail.com');
+INSERT INTO Students values (2, "Baby", 'Baby@gmail.com');
+INSERT INTO Students values (3, "Chikku", 'Chikku@gmail.com');
+INSERT INTO Students values (4, "Dennis", 'Dennis@gmail.com');
+INSERT INTO Students values (5, "Ester", 'Ester@gmail.com');
+
+INSERT INTO Batch VALUES (1,"B27WD","98%");
+INSERT INTO Batch VALUES (2,"B27WE","54%");
+INSERT INTO Batch VALUES (3,"B31WD","23%");
+INSERT INTO Batch VALUES (4,"B30WD","32%");
+INSERT INTO Batch VALUES (5,"B30WE","18%");
+
+INSERT INTO TASKS VALUES (1,"Create a sql model for guvi");
+INSERT INTO TASKS VALUES(2,"Create a mongo db model for guvi");
+INSERT INTO TASKS VALUES(3,"Create a password reset flow page");
+INSERT INTO TASKS VALUES(4,"Create a URL-SHORTENER");
+INSERT INTO TASKS VALUES(5,"Create a CRM APP");
+-- fetch 
+SELECT * FROM TASKS;
